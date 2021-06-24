@@ -5,13 +5,41 @@
          version="3.0">
 
     <servlet>
-        <servlet-name>mainServlet</servlet-name>
-        <servlet-class>Main</servlet-class>
+        <servlet-name>HelloRu</servlet-name>
+        <servlet-class>Hello_ru.HelloRu</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExitRu</servlet-name>
+        <servlet-class>Hello_ru.ExitRu</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>HelloRu</servlet-name>
+        <url-pattern>/hello_ru</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ExitRu</servlet-name>
+        <url-pattern>/exit_ru</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloEn</servlet-name>
+        <servlet-class>Hello_en.HelloEn</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExitEn</servlet-name>
+        <servlet-class>Hello_en.ExitEn</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>mainServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <servlet-name>HelloEn</servlet-name>
+        <url-pattern>/hello_en</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ExitEn</servlet-name>
+        <url-pattern>/exit_en</url-pattern>
     </servlet-mapping>
 
 </web-app>
